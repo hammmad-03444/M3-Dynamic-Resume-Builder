@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3 Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="resume">
+        <form action="post" id="resume-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="objective">Objective:</label>
+            <textarea id="objective" name="objective" required></textarea>
+            <label for="education">Education:</label>
+            <input type="text" id="education" name="education" required>
+            <label for="workExperience">Work Experience:</label>
+            <textarea id="workExperience" name="workExperience" required></textarea>
+            <label for="skills">Skills:</label>
+            <input type="tel" id="skills" name="skills" required>
+            <button type="submit" class="button">Generate Resume</button>
+
+        </form>
+    </div>
+    <div id="finalresume"></div>
+    <div class="buttons">
+        <button class="print">Print</button>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
